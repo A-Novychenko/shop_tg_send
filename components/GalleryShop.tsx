@@ -8,6 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import {Button, CardActionArea, CardActions} from "@mui/material";
 import {products} from "@/data/dataProducts";
+import {BuyBtn} from "./BuyBtn";
 
 export const GalleryShop = () => {
   return (
@@ -61,12 +62,7 @@ export const GalleryShop = () => {
                         </CardContent>
                       </CardActionArea>
                       <CardActions>
-                        <Button
-                          size="medium"
-                          style={{backgroundColor: "#4184ff", color: "#fff"}}
-                        >
-                          Buy
-                        </Button>
+                        <BuyBtn name={name} price={price} id={id} />
                       </CardActions>
                     </Card>
                   </ListItem>
